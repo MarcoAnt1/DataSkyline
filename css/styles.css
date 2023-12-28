@@ -161,8 +161,17 @@ a {
   width: 40px;
 }
 
+.icon--small {
+  height: 30px;
+  width: 30px;
+}
+
 .icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
 }
 
 .icon-container {
@@ -173,6 +182,10 @@ a {
   height: 64px;
   justify-content: center;
   width: 64px;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 /* Buttons */
@@ -281,7 +294,8 @@ a {
   overflow: hidden;
 }
 
-.card__header, .card__body {
+.card__header,
+.card__body {
   padding: 2rem 3rem;
 }
 
@@ -299,10 +313,15 @@ a {
   background: #02cdf1;
 }
 
+@media screen and (max-width: 767px) {
+  .card {
+    overflow: initial;
+  }
+}
+
 /* Plans */
 .plan {
   display: flex;
-
 }
 
 .plan__name {
@@ -407,9 +426,9 @@ a {
 
 .quote__organization {
   color: var(--color-headings);
-  opacity: .4;
+  opacity: 0.4;
   font-size: 2rem;
-  font-style: normal
+  font-style: normal;
 }
 
 .quote__line {
@@ -436,14 +455,51 @@ a {
   display: grid;
 }
 
+@media screen and (max-width: 767px) {
+  .grid {
+    display: inline;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .grid--cols-2 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .grid--cols-3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonial */
+
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
   }
 }

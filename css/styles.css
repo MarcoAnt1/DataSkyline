@@ -240,6 +240,11 @@ a {
   color: #fff;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .btn--block {
   width: 100%;
   display: inline-block;
@@ -311,12 +316,6 @@ a {
 
 .card--secondary .badge--secondary {
   background: #02cdf1;
-}
-
-@media screen and (max-width: 767px) {
-  .card {
-    overflow: initial;
-  }
 }
 
 /* Plans */
@@ -455,12 +454,6 @@ a {
   display: grid;
 }
 
-@media screen and (max-width: 767px) {
-  .grid {
-    display: inline;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .grid--cols-2 {
     grid-template-columns: repeat(2, 1fr);
@@ -474,7 +467,6 @@ a {
 }
 
 /* Testimonial */
-
 .testimonial {
   padding: 3rem;
 }
@@ -501,5 +493,46 @@ a {
 
   .testimonial .quote {
     margin-left: 6rem;
+  }
+}
+
+/* Callout */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--cols-2 {
+    grid-template-columns: 1fr auto;
+  }
+  
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
   }
 }

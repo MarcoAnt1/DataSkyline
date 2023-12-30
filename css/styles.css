@@ -777,7 +777,7 @@ a {
 }
 
 .block-plans .card {
-  max-width: 500px;
+  max-width: 35rem;
   margin: 0 auto;
 }
 
@@ -785,6 +785,10 @@ a {
 .feature {
   gap: 4rem 2rem;
   margin: 12rem 0;
+}
+
+.feature__content {
+  padding: 2rem;
 }
 
 .feature:first-of-type {
@@ -800,17 +804,29 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .feature__content {
+    padding: 0;
+  }
+
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
 }
 
 /* Showcase Block */
+.block-showcase .list {
+  padding: 2rem;
+}
+
 .block-showcase__image > img {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
+  .block-showcase .list {
+    padding: 0;
+  }
+
   .block-showcase .grid {
     grid-template-columns: 50% 50%;
   }

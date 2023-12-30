@@ -596,7 +596,6 @@ a {
 }
 
 .collapsible__chevron {
-  transform: rotate(-90deg);
   transition: transform 0.3s;
 }
 
@@ -608,7 +607,7 @@ a {
 }
 
 .collapsible--expanded .collapsible__chevron {
-  transform: rotate(0);
+  transform: rotate(90deg);
 }
 
 .collapsible--expanded .collapsible__content {
@@ -746,6 +745,10 @@ a {
 }
 
 /* Domain Block */
+.block-domain {
+  padding: 2rem;
+}
+
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
@@ -766,6 +769,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .block-domain {
+    padding: 0;
+  }
+
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }

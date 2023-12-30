@@ -1,4 +1,14 @@
 <svg width="0" height="0" class="hidden">
+  <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlnsSketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 32 32" id="chevron">
+    <title>chevron-right-circle</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketchType="MSPage">
+      <g id="Icon-Set-Filled" sketchType="MSLayerGroup" transform="translate(-102.000000, -1089.000000)" fill="#000000">
+        <path d="M122.536,1105.88 L114.879,1113.54 C114.488,1113.93 113.855,1113.93 113.464,1113.54 C113.074,1113.14 113.074,1112.51 113.464,1112.12 L120.586,1105 L113.464,1097.88 C113.074,1097.49 113.074,1096.86 113.464,1096.46 C113.855,1096.07 114.488,1096.07 114.879,1096.46 L122.536,1104.12 C122.775,1104.36 122.85,1104.69 122.795,1105 C122.85,1105.31 122.775,1105.64 122.536,1105.88 L122.536,1105.88 Z M118,1089 C109.164,1089 102,1096.16 102,1105 C102,1113.84 109.164,1121 118,1121 C126.836,1121 134,1113.84 134,1105 C134,1096.16 126.836,1089 118,1089 L118,1089 Z" id="chevron-right-circle" sketchType="MSShapeGroup"></path>
+      </g>
+    </g>
+  </symbol>
   <symbol id="menu" enable-background="new 0 0 24 24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g>
       <path d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"></path>
@@ -119,12 +129,6 @@
     <g></g>
     <g></g>
     <g></g>
-  </symbol>
-  <symbol id="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51">
-    <defs></defs>
-    <circle cx="25.5" cy="25.5" r="25.5"></circle>
-    <rect x="24.4" y="27.9" width="1.6" height="15.24" rx="0.8" transform="matrix(0.78, -0.63, 0.63, 0.78, -21.26, 15.39)"></rect>
-    <rect x="33.3" y="27.9" width="1.6" height="15.24" rx="0.8" transform="translate(24 -21.9) rotate(37.3)"></rect>
   </symbol>
   <symbol version="1.1" id="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 501.656 501.656">
     <g>

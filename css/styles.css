@@ -29,7 +29,7 @@ html {
 body {
   color: var(--color-body);
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -42,7 +42,7 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -50,8 +50,9 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 p {
@@ -101,7 +102,6 @@ a {
 }
 
 /* Badges */
-
 .badge {
   border-radius: 20px;
   font-size: 2rem;
@@ -126,10 +126,6 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .badge {
-    font-size: 1.5rem;
-  }
-
   .badge--small {
     font-size: 1.2rem;
   }
@@ -198,7 +194,7 @@ a {
 
 /* Buttons */
 .btn {
-  border-radius: 4rem;
+  border-radius: 40px;
   border: 0;
   cursor: pointer;
   font-size: 1.8rem;
@@ -233,7 +229,7 @@ a {
 }
 
 .btn--secondary:hover {
-  background: #00c8eb;
+  background: #05cdf0;
 }
 
 .btn--accent {
@@ -318,7 +314,7 @@ a {
 
 .card__header,
 .card__body {
-  padding: 2rem 3rem;
+  padding: 2rem 7%;
 }
 
 .card--primary .card__header {
@@ -353,11 +349,11 @@ a {
 }
 
 .plan__price {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .plan__billing-cycle {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 300;
   margin: 1rem;
   opacity: 0.8;
@@ -366,7 +362,7 @@ a {
 .plan__description {
   display: block;
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
@@ -383,11 +379,11 @@ a {
 }
 
 .plan--popular .card__header::before {
-  content: url("../images/popular.svg");
+  content: url(../images/popular.svg);
   display: inline-block;
   position: absolute;
   right: 5%;
-  top: -5px;
+  top: -6px;
   width: 40px;
 }
 
@@ -400,6 +396,10 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .plan--popular {
+    transform: scale(1.1);
+  }
+
   .plan__name {
     font-size: 1.4rem;
   }
@@ -452,7 +452,7 @@ a {
 }
 
 .quote__author {
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 500;
   margin-bottom: 0;
@@ -460,7 +460,7 @@ a {
 
 .quote__organization {
   color: var(--color-headings);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: normal;
   opacity: 0.4;
 }
@@ -501,13 +501,19 @@ a {
   }
 }
 
-/* Testimonial */
+/* Testimonials */
 .testimonial {
   padding: 3rem;
 }
 
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 110%;
+}
+
 .testimonial__image {
   position: relative;
+  margin: 0 3rem;
 }
 
 .testimonial__image > img {
@@ -521,13 +527,19 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .testimonial__image {
+    margin: 0;
+  }
+
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
   }
 
   .testimonial .quote {
-    margin-left: 6rem;
+    margin: 5rem 0 0 6rem;
+    font-size: 120%;
+    line-height: 1.5;
   }
 }
 
@@ -535,10 +547,6 @@ a {
 .callout {
   border-radius: 5px;
   padding: 4rem;
-}
-
-.callout-signup {
-  transform: translateY(5rem);
 }
 
 .callout--primary {
@@ -611,12 +619,13 @@ a {
 /* Blocks */
 .block {
   --padding-vertical: 6rem;
-  padding: var(--padding-vertical) 2rem ;
+  padding: 0 0 var(--padding-vertical) 0;
 }
 
 .block__header {
   text-align: center;
   margin-bottom: 4rem;
+  padding-top: 2rem;
 }
 
 .block__heading {
@@ -636,12 +645,12 @@ a {
 
 .block--skewed-right {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
-  padding-bottom: calc(var(--padding-vertical) + 5rem);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
 .block--skewed-left {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-  padding-bottom: calc(var(--padding-vertical) + 5rem);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
 .container {
@@ -656,7 +665,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .nav__list {
@@ -692,6 +701,7 @@ a {
 
 .nav__brand {
   transform: translateY(5px);
+  width: 150px;
 }
 
 @media screen and (min-width: 768px) {
@@ -842,6 +852,8 @@ a {
 .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 
 .footer__brand {
@@ -861,6 +873,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    font-size: 1.5rem;
+  }
+
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
@@ -871,7 +887,7 @@ a {
 
   .footer .collapsible__content {
     opacity: 1;
-    max-height: 100vh;
+    max-height: 100%;
   }
 
   .footer__brand {
@@ -890,4 +906,9 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+/* Sign-up Callout */
+.callout-signup {
+  transform: translateY(5rem);
 }

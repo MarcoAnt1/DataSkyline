@@ -537,6 +537,10 @@ a {
   padding: 4rem;
 }
 
+.callout-signup {
+  transform: translateY(5rem);
+}
+
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
@@ -814,6 +818,7 @@ a {
 /* Footer */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {

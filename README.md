@@ -24,3 +24,14 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
    npm install -g parcel-bundler
    parcel index.html
 
+## Usage
+Open the web browser and go to http://localhost:1234 to view the web page.
+
+## Contributing
+If you want to contribute to this project, feel free to submit issues or pull requests.
+
+## Live Demo
+Visit https://dataskyline.netlify.app/ to see the live demo.
+
+## Acknowledgments
+Thank you to the Parcel bundler for simplifying the build process.

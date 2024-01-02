@@ -23,19 +23,19 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" ></a>
+        <a class="nav__brand" href="/"><img src="images/logo.png" alt=""><span class="nav__brand-name">Skyline</span></a>
         <svg class="icon icon--white nav__toggler">
           <use href="images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Hosting</a></li>
-          <li class="nav__item"><a href="#">VPS</a></li>
-          <li class="nav__item"><a href="#">Domain</a></li>
-          <li class="nav__item"><a href="#">Pricing</a></li>
+          <li class="nav__item"><a href="#hero">Home</a></li>
+          <li class="nav__item"><a href="#plans">Pricing</a></li>
+          <li class="nav__item"><a href="#domain">Domain</a></li>
+          <li class="nav__item"><a href="#vps">VPS</a></li>
         </ul>
       </nav>
     </header>
-    <section class="block block--dark hero">
+    <section id="hero" class="block block--dark hero">
       <div class="container grid grid--cols-2">
         <header class="block__header hero__content" data-aos="fade-up">
           <h1 class="block__heading">Cloud Hosting for Pros</h1>
@@ -53,7 +53,7 @@
         </picture>
       </div>
     </section>
-    <section class="block container block-domain" data-aos="zoom-in-up">
+    <section id="plans" class="block container block-domain" data-aos="zoom-in-up">
       <header class="block__header">
         <h2>Starting at $10 per month</h2>
         <p>
@@ -147,7 +147,7 @@
         </div>
       </div>
     </section>
-    <section class="block container">
+    <section id="vps" class="block container">
       <header class="block__header">
         <h2>Host on the Cloud to Keep Growing</h2>
         <p>
@@ -244,7 +244,7 @@
         </picture>
       </article>
     </section>
-    <section class="block block--dark block-showcase">
+    <section id="domain" class="block block--dark block-showcase">
       <header class="block__header">
         <h2 class="block__heading">User-friendly Control Panel</h2>
       </header>
@@ -324,7 +324,7 @@
           <div class="grid grid--cols-2">
             <div class="testimonial__image">
               <img
-                src="images/testimonial.jpg"
+                src="images/customer.jpeg"
                 alt="A happy smiling customer."
               >
               <span class="icon-container icon-container--accent">
@@ -347,8 +347,8 @@
                     </svg>
                   </div>
                   <div class="media__body">
-                    <h3 class="media__title quote__author">John Smith</h3>
-                    <p class="quote__organization">ABC Company</p>
+                    <h3 class="media__title quote__author">Landon Davis</h3>
+                    <p class="quote__organization">XYZ Company</p>
                   </div>
                 </div>
               </footer>
@@ -404,6 +404,10 @@
             </ul>
           </div>
         </section>
+        <div class="footer__brand">
+          <img src="images/logo.png" alt=""><span class="nav__brand-name">Skyline</span></a>
+          <p class="footer__copyright">Copyright 2023 Marco Antonio</p>
+        </div>
         <section class="collapsible footer__section">
           <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Support</h2>
@@ -434,10 +438,6 @@
             </ul>
           </div>
         </section>
-        <div class="footer__brand">
-          <img src="images/logo.svg" alt="" >
-          <p class="footer__copyright">Copyright 2020 Marco Antonio</p>
-        </div>
       </div>
     </footer>
     <script src="js/main.js"></script>

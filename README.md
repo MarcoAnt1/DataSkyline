@@ -1,6 +1,6 @@
 # Cloud Computing Web Page
 
-A simple web page about cloud computing created using HTML5, CSS3, and JavaScript.
+A simple web page about cloud computing created using HTML5, CSS3, and JavaScript. This project was developed as part of an HTML and CSS course, incorporating best practices and modern web development techniques.
 
 ## Summary
 
